@@ -29,4 +29,5 @@ include_directories(${PROJECT_SOURCE_DIR})
 enable_testing()
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
-add_subdirectory(IteratorPattern)
+add_subdirectory(Iterator)
+add_subdirectory(Adaptor1)
