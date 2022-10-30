@@ -24,6 +24,9 @@ public:
 
     static IFactory *GetFactory(const std::string &name) {
         auto iter = s_createrMap.find(name);
+        if (iter == s_createrMap.end()) {
+            return nullptr;
+        }
         return iter->second();
     }
 
