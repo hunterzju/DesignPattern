@@ -4,6 +4,8 @@ project (DesignPattern C CXX)
 
 SET(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # use c++11
 if(CMAKE_VERSION VERSION_LESS "3")
   add_definitions(-std=c++11)
@@ -43,3 +45,4 @@ add_subdirectory(09Bridge)
 add_subdirectory(10Strategy)
 add_subdirectory(11Composite)
 add_subdirectory(12Decorator)
+add_subdirectory(13Visitor)
